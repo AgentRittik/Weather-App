@@ -1,5 +1,8 @@
 .window{
-    background-image: url("https://img.freepik.com/free-vector/hand-drawn-flat-winter-landscape-illustration_23-2149141517.jpg?size=626&ext=jpg&ga=GA1.1.1672881197.1696448118&semt=ais");
+    /* background-image: url("https://img.freepik.com/free-vector/hand-drawn-flat-winter-landscape-illustration_23-2149141517.jpg?size=626&ext=jpg&ga=GA1.1.1672881197.1696448118&semt=ais"); */
+    /* background-image: url("https://img.freepik.com/free-vector/rain-lightnings-mountain-nature-landscape-with-water-pond-snowy-peaks-green-grass-rocks-conifers-cartoon-background-with-thunderstorm-weather-lake-scenery-view-vector-illustration_107791-11167.jpg?size=1100&ext=jpg&ga=GA1.1.1672881197.1696448118&semt=ais"); */
+    /* background-image: url("https://img.freepik.com/free-vector/tsunami-scene-with-thunderstorms_1308-30309.jpg?size=1100&ext=jpg&ga=GA1.1.1672881197.1696448118&semt=ais"); */
+    background-image : url("https://img.freepik.com/free-vector/gradient-spring-landscape-concept_23-2148443842.jpg?size=700&ext=jpg&ga=GA1.1.1672881197.1696448118&semt=ais");
     max-height: 43vh;
     min-height: 43vh;
     /* -webkit-box-shadow: 1px 2px 44px 16px rgba(172,222,255,1);
@@ -33,6 +36,18 @@
     font-size: 5rem;
     color: aliceblue;
 }
+.degree-1{
+    font-size: 3rem;
+}
 .place{
     color: rgb(18,93,160);
+}
+.sub-content{
+    max-width: 30vw;
+    min-width: 30vw;
+}
+.description-text{
+    font-size: 4rem;
+    color: white;
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); */
 }
