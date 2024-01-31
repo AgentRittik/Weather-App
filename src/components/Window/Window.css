@@ -1,0 +1,38 @@
+.window{
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-flat-winter-landscape-illustration_23-2149141517.jpg?size=626&ext=jpg&ga=GA1.1.1672881197.1696448118&semt=ais");
+    max-height: 43vh;
+    min-height: 43vh;
+    /* -webkit-box-shadow: 1px 2px 44px 16px rgba(172,222,255,1);
+    -moz-box-shadow: 1px 2px 44px 16px rgba(172,222,255,1);
+    box-shadow: 1px 2px 44px 16px rgba(172,222,255,1);
+    background-color: rgba(255, 255, 255, 0.5); */
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.glassmorphism{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.weather-logo{
+    height: 10vh;
+    width:5vw;
+}
+.log-img{
+    height: 100%;
+    width: 100%;
+}
+
+.temperature{
+    height:15vh;
+}
+.degree{
+    font-size: 5rem;
+    color: aliceblue;
+}
+.place{
+    color: rgb(18,93,160);
+}
