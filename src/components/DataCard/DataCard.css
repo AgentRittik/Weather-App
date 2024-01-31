@@ -1,0 +1,53 @@
+
+.card-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    border : 4px solid #F7F5FA;
+    max-width:35%;
+}
+
+/* .divider-line{
+    border: 6px solid rgb(228, 8, 8);
+    height: 200px;
+    position: absolute;
+    left: 50%;
+} */
+
+.forcast{
+    min-width: 63%;
+    height: 35vh;
+}
+.humidity-logo{
+    height:7vh;
+    width:4vw;
+}
+.humidity-logo > img{
+    height: 100%;
+    width: 100%;
+}
+.pressure-logo{
+    height:7vh;
+    width:4vw;
+}
+.pressure-logo > img{
+    height: 100%;
+    width: 100%;
+}
+.wind-speed-logo{
+    height:7vh;
+    width:4vw;
+}
+.wind-speed-logo > img{
+    height: 100%;
+    width: 100%;
+}
+.wind-direcction-logo{
+    height:7vh;
+    width:4vw;
+}
+.wind-direcction-logo > img{
+    height: 100%;
+    width: 100%;
+}

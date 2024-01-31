@@ -1,0 +1,16 @@
+.card{
+    height : 25vh;
+    min-width : 6.5vw;
+    max-width: 7vw;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.15); */
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.card-icon{
+    width :80%;
+    height : 60%;
+    margin: 1rem;
+    background: linear-gradient(45deg, #E6BFE0, #D5C6F5, #9C7FC5);
+    /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); */
+    border-radius: 10px;
+}
