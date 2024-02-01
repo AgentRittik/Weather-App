@@ -2,6 +2,11 @@
 
 Welcome to the Weather App! This application allows you to fetch weather data based on user input using the OpenWeatherMap API.
 
+## Docs
+
+https://github.com/AgentRittik/Weather-App/assets/109760373/e5447ce0-4202-4d94-8e5d-e2a7815fe948
+
+
 ## Setup Instructions
 
 ### Prerequisites
