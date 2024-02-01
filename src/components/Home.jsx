@@ -6,6 +6,8 @@ import getWeatherData from "../Api/getWeaterData";
 import getForcastingData from "../Api/getForcastingData";
 import getLatAndLon from "../Api/getLatAndLon";
 import Window from "./Window/Window";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 function Home(){
@@ -58,7 +60,13 @@ function Home(){
         getLatAndLon(name)
             .then(
                 (data) =>{
-                    console.log("hello" ,data);
+                    if(!data){
+                        toast.error("City not found",);
+                        return;
+                    }
+                    else{
+                        toast.success("City found");
+                    }
                     const {lat,lon} = data;
                     console.log(lat,lon);
                     setCoords({latitude:lat , longitude:lon});
@@ -72,6 +80,7 @@ function Home(){
         (
             <>
             <Nabbar handleSearch={(name)=>handleSearch(name)} units={units} setUnits={setUnits}/>
+            <ToastContainer position="top-center" theme="dark"/>
             <div className="container">
                 <Window tempData={weatherData.weather} mainData={weatherData.main} city={weatherData.name} units={units}/>
                 <DataCard forCastingData ={forCastingData} currentWeatherData={weatherData} units={units}/>

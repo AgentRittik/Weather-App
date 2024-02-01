@@ -18,13 +18,13 @@ function Nabbar({handleSearch ,units , setUnits}){
                             className={`btn btn-secondary ${units?"active":""}`}
                             onClick={()=>setUnits(true)}
                         >
-                            Celecius
+                            Celsius
                         </label>
                         <label 
                             class={`btn btn-secondary ${units?"":"active"}`}
                             onClick={()=>setUnits(false)}
                         >
-                            Fareneifht
+                             Fahrenheit
                         </label>
                     </div>
                 <div className="d-flex ">
