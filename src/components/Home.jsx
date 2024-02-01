@@ -71,7 +71,10 @@ function Home(){
                     console.log(lat,lon);
                     setCoords({latitude:lat , longitude:lon});
                 }    
-            );
+            )
+            .catch((error) => {
+                toast.error(error.message);
+            });
     }
     
     return(
