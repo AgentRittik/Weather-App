@@ -5,6 +5,7 @@
     background-image : url("https://img.freepik.com/free-vector/gradient-spring-landscape-concept_23-2148443842.jpg?size=700&ext=jpg&ga=GA1.1.1672881197.1696448118&semt=ais");
     max-height: 43vh;
     min-height: 43vh;
+    max-width: 100%;
     /* -webkit-box-shadow: 1px 2px 44px 16px rgba(172,222,255,1);
     -moz-box-shadow: 1px 2px 44px 16px rgba(172,222,255,1);
     box-shadow: 1px 2px 44px 16px rgba(172,222,255,1);
@@ -20,6 +21,20 @@
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.time{
+    min-width: 15vw;
+    max-width: 30vw;
+    max-height: 35vh;
+}
+.sub-content{
+    max-width: 40vw;
+    min-width: 40vw;
+    max-height:35vh;
+}
+.headlines{
+    width: 100%;
+    max-height: 40%;
+}
 .weather-logo{
     height: 10vh;
     width:5vw;
@@ -34,20 +49,21 @@
 }
 .degree{
     font-size: 5rem;
-    color: aliceblue;
+    /* color: aliceblue; */
 }
 .degree-1{
     font-size: 3rem;
 }
-.place{
+/* .place{
     color: rgb(18,93,160);
-}
-.sub-content{
+} */
+/* .sub-content{
     max-width: 30vw;
     min-width: 30vw;
-}
+} */
 .description-text{
-    font-size: 4rem;
-    color: white;
+    max-width: 80%;
+    /* color: white; */
+    height: 100%;
     /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); */
 }

@@ -1,20 +1,28 @@
 
 import "./Card.css";
-function Card(){
+function Card({dayInfo, logoInfo , description , temp}){
+    // console.log({dayInfo , logoInfo , description , temp});
+    function getDayOfWeek(dt) {
+        const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        const date = new Date(dt * 1000); // Convert Unix timestamp to milliseconds
+        const dayOfWeek = daysOfWeek[date.getDay()];
+        return dayOfWeek;
+    }
+
     return(
         <>
-            <div className="card">
-                <div className="day d-flex justify-content-center mt-4">
-                    <h3><span>Mon</span></h3>
+            <div className="card d-flex justify-content-center">
+                <div className="day d-flex justify-content-center mt-1">
+                    <h4><span>{getDayOfWeek(dayInfo)}</span></h4>
                 </div>
-                <div className="card-icon d-flex justify-content-center">
-                    <img src="https://openweathermap.org/img/wn/10d.png" alt="" />
+                <div className="card-icon d-flex justify-content-center mt-1">
+                    <img src={`https://openweathermap.org/img/wn/${logoInfo}.png`} alt="" />
                 </div>
-                <div className="description d-flex justify-content-center">
-                    <h5><span>Cloudy</span></h5>
+                <div className="description d-flex justify-content-center mt-1">
+                    <h6 className="d-flex justify-content-center text-center">{description}</h6>
                 </div>
-                <div className="temp d-flex justify-content-center">
-                    <h4><span>13&deg;C</span></h4>
+                <div className="temp d-flex justify-content-center mt-1">
+                    <h5><span>{temp}&deg;C</span></h5>
                 </div>    
             </div>
         </>

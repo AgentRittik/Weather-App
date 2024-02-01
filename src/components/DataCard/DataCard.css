@@ -3,9 +3,14 @@
     background-color: white;
     border-radius: 10px;
     color:black;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border : 4px solid #F7F5FA;
     max-width:35%;
+}
+
+.tag{
+    min-height: 40%;
+    max-height: 40%;
 }
 
 /* .divider-line{
@@ -19,15 +24,38 @@
     min-width: 63%;
     height: 35vh;
 }
-.humidity-logo{
-    height:7vh;
-    width:4vw;
+.forcast-card{
+    max-height: 70%;
 }
-.humidity-logo > img{
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90%;
+    width:35%;
+}
+.icons > img{
     height: 100%;
     width: 100%;
 }
-.pressure-logo{
+.wind-speed-logo{
+    height :90%;
+    width :35%;
+}
+.wind-direcction-logo{
+    height :90%;
+    width :35%;
+}
+.content-info{
+    max-width: 60%;
+    min-width: 59%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* .pressure-logo{
     height:7vh;
     width:4vw;
 }
@@ -50,4 +78,4 @@
 .wind-direcction-logo > img{
     height: 100%;
     width: 100%;
-}
+} */
