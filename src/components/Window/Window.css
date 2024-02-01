@@ -61,9 +61,14 @@
     max-width: 30vw;
     min-width: 30vw;
 } */
+
 .description-text{
     max-width: 80%;
     /* color: white; */
     height: 100%;
     /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); */
+}
+.description{
+    max-width: 100%;
+    min-width: 100%
 }

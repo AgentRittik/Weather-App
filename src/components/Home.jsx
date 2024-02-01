@@ -12,6 +12,7 @@ function Home(){
     const [coords, setCoords] = useState({});
     const [weatherData, setWeatherData] = useState("");
     const [forCastingData , setForCastingData] = useState("");
+    const [units,setUnits] = useState(true);
     useEffect(() => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
@@ -31,14 +32,14 @@ function Home(){
     useEffect(() => {
         console.log("inside");
         if(coords.latitude && coords.longitude){
-            getWeatherData(coords.latitude, coords.longitude)
+            getWeatherData(coords.latitude, coords.longitude , units)
                 .then(
                     (data) =>{
                         // console.log("hello" ,data);
                         setWeatherData(data);
                     }    
                 );
-            getForcastingData(coords.latitude, coords.longitude)
+            getForcastingData(coords.latitude, coords.longitude, units)
                 .then(
                     (data) =>{
                         // console.log("hello" ,data);
@@ -46,15 +47,12 @@ function Home(){
                     }    
                 );    
         }
-    }, [coords]);
+    }, [coords,units]);
 
     useEffect(()=>{
         console.log("log",weatherData , weatherData.main ,weatherData.wind);
 
     },[weatherData])
-    // useEffect(() => {
-    //     alert(`Latitude: ${coords.latitude}, Longitude: ${coords.longitude}`);
-    // }, [coords]);
 
     function handleSearch(name){
         getLatAndLon(name)
@@ -73,10 +71,10 @@ function Home(){
         { weatherData && forCastingData &&
         (
             <>
-            <Nabbar handleSearch={(name)=>handleSearch(name)}/>
+            <Nabbar handleSearch={(name)=>handleSearch(name)} units={units} setUnits={setUnits}/>
             <div className="container">
-                <Window tempData={weatherData.weather} mainData={weatherData.main} city={weatherData.name}/>
-                <DataCard forCastingData ={forCastingData} currentWeatherData={weatherData}/>
+                <Window tempData={weatherData.weather} mainData={weatherData.main} city={weatherData.name} units={units}/>
+                <DataCard forCastingData ={forCastingData} currentWeatherData={weatherData} units={units}/>
             </div>
             </>
         )}

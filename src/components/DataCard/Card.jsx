@@ -1,6 +1,6 @@
 
 import "./Card.css";
-function Card({dayInfo, logoInfo , description , temp}){
+function Card({dayInfo, logoInfo , description , temp,units}){
     // console.log({dayInfo , logoInfo , description , temp});
     function getDayOfWeek(dt) {
         const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -22,7 +22,7 @@ function Card({dayInfo, logoInfo , description , temp}){
                     <h6 className="d-flex justify-content-center text-center">{description}</h6>
                 </div>
                 <div className="temp d-flex justify-content-center mt-1">
-                    <h5><span>{temp}&deg;C</span></h5>
+                    <h5><span>{temp}&deg;{units? "C":"F"}</span></h5>
                 </div>    
             </div>
         </>

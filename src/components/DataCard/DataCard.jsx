@@ -4,13 +4,13 @@ import "./DataCard.css"
 import Card from "./Card"
 import { useEffect } from "react";
 import SubInfoCard from "../SubInfoCard.jsx/SubInfoCard";
-function DataCard({forCastingData ,currentWeatherData}){
+function DataCard({forCastingData ,currentWeatherData, units}){
     // console.log("vishal",forCastingData);
-    useEffect(()=>{
-        forCastingData.map((data)=>console.log("rr",data));
-        // console.log("vishal",currentWeatherData , currentWeatherData.main , currentWeatherData.wind);
+    // useEffect(()=>{
+    //     forCastingData.map((data)=>console.log("rr",data));
+    //     // console.log("vishal",currentWeatherData , currentWeatherData.main , currentWeatherData.wind);
 
-    },[currentWeatherData])
+    // },[currentWeatherData])
     return(
         <div className="data-cards mt-3">
             <div className="main-container d-flex justify-content-between gap-2">
@@ -33,6 +33,7 @@ function DataCard({forCastingData ,currentWeatherData}){
                                             logoInfo={item.weather[0].icon}
                                             description={item.weather[0].description}
                                             temp={item.main.temp}
+                                            units={units}
                                         />
                                     </div>
                                 )
